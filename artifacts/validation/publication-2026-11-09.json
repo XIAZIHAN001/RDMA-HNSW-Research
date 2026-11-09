@@ -1,0 +1,43 @@
+{
+  "publication_date": "2026-11-09",
+  "source_snapshot": "d5c78a5e6ac28902a0cfac5c1c5300159454dc38",
+  "public_source_commit": "7d8decffcf26f7d2ccdc87e81a5731dee8debd0d",
+  "environment": {
+    "os": "Ubuntu 22.04 / WSL",
+    "architecture": "x86_64",
+    "compiler": "GCC 11.4.0",
+    "cmake": "3.22.1",
+    "numpy": "1.21.5",
+    "build_type": "Release",
+    "uniform_optimization": "-O3 -DNDEBUG"
+  },
+  "tests": {
+    "mmap": {
+      "passed": 23,
+      "skipped": 0,
+      "failed": 0
+    },
+    "rdma": {
+      "passed": 23,
+      "skipped": 1,
+      "failed": 0
+    }
+  },
+  "synthetic_demo": {
+    "nodes": 1000,
+    "dim": 32,
+    "queries": 100,
+    "transport": "mmap",
+    "exitcode": 0
+  },
+  "preflight": {
+    "local_ready": false,
+    "blockers": [
+      "no RDMA device"
+    ],
+    "all_programs_executable": true
+  },
+  "hardware_connection_verified": false,
+  "hardware_performance_acceptance": false,
+  "scope": "Clean public checkout build, full regression and synthetic local demo; no SIFT matrix or live remote DRAM execution."
+}
