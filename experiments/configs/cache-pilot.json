@@ -1,0 +1,24 @@
+{
+  "stage": "T4",
+  "measurement": "local_mmap_correctness_pilot",
+  "nodes": 10000,
+  "operations": 40,
+  "update_ratio": 0.3,
+  "seed": 42,
+  "distributions": [
+    "random",
+    "hotspot"
+  ],
+  "hotspot": "fixed first 1 percent of initial node IDs",
+  "cache_capacity": 10000,
+  "policies": [
+    "fixed",
+    "header_actual",
+    "cached_length"
+  ],
+  "cache_modes": [
+    "warm",
+    "cold"
+  ],
+  "verify_truth": true
+}

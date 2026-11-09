@@ -1,0 +1,22 @@
+{
+  "description": "T3 static two-baseline pilot; reference values for CLI commands",
+  "measurement": "local_mmap_pilot",
+  "node_counts": [10000, 100000],
+  "query_count": 100,
+  "repeats": 3,
+  "M": 16,
+  "ef_construction": 100,
+  "ef_search": 256,
+  "k": 10,
+  "seed": 42,
+  "policies": ["fixed", "header_actual"],
+  "policy_order": "shuffled each repeat using seed 42 + node_count",
+  "index_filesystem": "WSL Linux temporary copy",
+  "model": {
+    "latency_us": 3,
+    "bandwidth_gbps": 100,
+    "bandwidth_unit": "decimal Gbit/s",
+    "calibration": "assumed, not measured RDMA",
+    "scope": "serial adjacency reads only"
+  }
+}

@@ -1,0 +1,1122 @@
+{
+  "measurement": "local_mmap_epoch",
+  "repeats": 3,
+  "run_order_seed": 20261008,
+  "workload_seed": 42,
+  "M": 16,
+  "ef_construction": 100,
+  "ef_search": 256,
+  "k": 10,
+  "configs": [
+    {
+      "dataset": "sift",
+      "nodes": 10000,
+      "policy": "fixed",
+      "update_ratio": 0,
+      "granularity": 8,
+      "cache_capacity": 10000,
+      "threads": 1,
+      "distribution": "random",
+      "warmup": 1000,
+      "groups": [
+        "main"
+      ],
+      "config_id": "c000",
+      "operation_count": 10000,
+      "epoch_size": 100
+    },
+    {
+      "dataset": "sift",
+      "nodes": 10000,
+      "policy": "fixed",
+      "update_ratio": 0.3,
+      "granularity": 8,
+      "cache_capacity": 10000,
+      "threads": 1,
+      "distribution": "random",
+      "warmup": 1000,
+      "groups": [
+        "main"
+      ],
+      "config_id": "c001",
+      "operation_count": 2000,
+      "epoch_size": 100
+    },
+    {
+      "dataset": "sift",
+      "nodes": 10000,
+      "policy": "header_actual",
+      "update_ratio": 0,
+      "granularity": 8,
+      "cache_capacity": 10000,
+      "threads": 1,
+      "distribution": "random",
+      "warmup": 1000,
+      "groups": [
+        "main"
+      ],
+      "config_id": "c002",
+      "operation_count": 10000,
+      "epoch_size": 100
+    },
+    {
+      "dataset": "sift",
+      "nodes": 10000,
+      "policy": "header_actual",
+      "update_ratio": 0.3,
+      "granularity": 8,
+      "cache_capacity": 10000,
+      "threads": 1,
+      "distribution": "random",
+      "warmup": 1000,
+      "groups": [
+        "main"
+      ],
+      "config_id": "c003",
+      "operation_count": 2000,
+      "epoch_size": 100
+    },
+    {
+      "dataset": "sift",
+      "nodes": 10000,
+      "policy": "cached_length",
+      "update_ratio": 0,
+      "granularity": 8,
+      "cache_capacity": 10000,
+      "threads": 1,
+      "distribution": "random",
+      "warmup": 1000,
+      "groups": [
+        "main"
+      ],
+      "config_id": "c004",
+      "operation_count": 10000,
+      "epoch_size": 100
+    },
+    {
+      "dataset": "sift",
+      "nodes": 10000,
+      "policy": "cached_length",
+      "update_ratio": 0.3,
+      "granularity": 8,
+      "cache_capacity": 10000,
+      "threads": 1,
+      "distribution": "random",
+      "warmup": 1000,
+      "groups": [
+        "main"
+      ],
+      "config_id": "c005",
+      "operation_count": 2000,
+      "epoch_size": 100
+    },
+    {
+      "dataset": "sift",
+      "nodes": 10000,
+      "policy": "prefix",
+      "update_ratio": 0,
+      "granularity": 8,
+      "cache_capacity": 10000,
+      "threads": 1,
+      "distribution": "random",
+      "warmup": 1000,
+      "groups": [
+        "main",
+        "sensitivity",
+        "g_update_cross"
+      ],
+      "config_id": "c006",
+      "operation_count": 10000,
+      "epoch_size": 100
+    },
+    {
+      "dataset": "sift",
+      "nodes": 10000,
+      "policy": "prefix",
+      "update_ratio": 0.3,
+      "granularity": 8,
+      "cache_capacity": 10000,
+      "threads": 1,
+      "distribution": "random",
+      "warmup": 1000,
+      "groups": [
+        "main",
+        "sensitivity",
+        "g_update_cross"
+      ],
+      "config_id": "c007",
+      "operation_count": 2000,
+      "epoch_size": 100
+    },
+    {
+      "dataset": "sift",
+      "nodes": 50000,
+      "policy": "fixed",
+      "update_ratio": 0,
+      "granularity": 8,
+      "cache_capacity": 10000,
+      "threads": 1,
+      "distribution": "random",
+      "warmup": 1000,
+      "groups": [
+        "main"
+      ],
+      "config_id": "c008",
+      "operation_count": 10000,
+      "epoch_size": 100
+    },
+    {
+      "dataset": "sift",
+      "nodes": 50000,
+      "policy": "fixed",
+      "update_ratio": 0.3,
+      "granularity": 8,
+      "cache_capacity": 10000,
+      "threads": 1,
+      "distribution": "random",
+      "warmup": 1000,
+      "groups": [
+        "main"
+      ],
+      "config_id": "c009",
+      "operation_count": 2000,
+      "epoch_size": 100
+    },
+    {
+      "dataset": "sift",
+      "nodes": 50000,
+      "policy": "header_actual",
+      "update_ratio": 0,
+      "granularity": 8,
+      "cache_capacity": 10000,
+      "threads": 1,
+      "distribution": "random",
+      "warmup": 1000,
+      "groups": [
+        "main"
+      ],
+      "config_id": "c010",
+      "operation_count": 10000,
+      "epoch_size": 100
+    },
+    {
+      "dataset": "sift",
+      "nodes": 50000,
+      "policy": "header_actual",
+      "update_ratio": 0.3,
+      "granularity": 8,
+      "cache_capacity": 10000,
+      "threads": 1,
+      "distribution": "random",
+      "warmup": 1000,
+      "groups": [
+        "main"
+      ],
+      "config_id": "c011",
+      "operation_count": 2000,
+      "epoch_size": 100
+    },
+    {
+      "dataset": "sift",
+      "nodes": 50000,
+      "policy": "cached_length",
+      "update_ratio": 0,
+      "granularity": 8,
+      "cache_capacity": 10000,
+      "threads": 1,
+      "distribution": "random",
+      "warmup": 1000,
+      "groups": [
+        "main"
+      ],
+      "config_id": "c012",
+      "operation_count": 10000,
+      "epoch_size": 100
+    },
+    {
+      "dataset": "sift",
+      "nodes": 50000,
+      "policy": "cached_length",
+      "update_ratio": 0.3,
+      "granularity": 8,
+      "cache_capacity": 10000,
+      "threads": 1,
+      "distribution": "random",
+      "warmup": 1000,
+      "groups": [
+        "main"
+      ],
+      "config_id": "c013",
+      "operation_count": 2000,
+      "epoch_size": 100
+    },
+    {
+      "dataset": "sift",
+      "nodes": 50000,
+      "policy": "prefix",
+      "update_ratio": 0,
+      "granularity": 8,
+      "cache_capacity": 10000,
+      "threads": 1,
+      "distribution": "random",
+      "warmup": 1000,
+      "groups": [
+        "main"
+      ],
+      "config_id": "c014",
+      "operation_count": 10000,
+      "epoch_size": 100
+    },
+    {
+      "dataset": "sift",
+      "nodes": 50000,
+      "policy": "prefix",
+      "update_ratio": 0.3,
+      "granularity": 8,
+      "cache_capacity": 10000,
+      "threads": 1,
+      "distribution": "random",
+      "warmup": 1000,
+      "groups": [
+        "main"
+      ],
+      "config_id": "c015",
+      "operation_count": 2000,
+      "epoch_size": 100
+    },
+    {
+      "dataset": "sift",
+      "nodes": 100000,
+      "policy": "fixed",
+      "update_ratio": 0,
+      "granularity": 8,
+      "cache_capacity": 10000,
+      "threads": 1,
+      "distribution": "random",
+      "warmup": 1000,
+      "groups": [
+        "main"
+      ],
+      "config_id": "c016",
+      "operation_count": 10000,
+      "epoch_size": 100
+    },
+    {
+      "dataset": "sift",
+      "nodes": 100000,
+      "policy": "fixed",
+      "update_ratio": 0.3,
+      "granularity": 8,
+      "cache_capacity": 10000,
+      "threads": 1,
+      "distribution": "random",
+      "warmup": 1000,
+      "groups": [
+        "main"
+      ],
+      "config_id": "c017",
+      "operation_count": 2000,
+      "epoch_size": 100
+    },
+    {
+      "dataset": "sift",
+      "nodes": 100000,
+      "policy": "header_actual",
+      "update_ratio": 0,
+      "granularity": 8,
+      "cache_capacity": 10000,
+      "threads": 1,
+      "distribution": "random",
+      "warmup": 1000,
+      "groups": [
+        "main"
+      ],
+      "config_id": "c018",
+      "operation_count": 10000,
+      "epoch_size": 100
+    },
+    {
+      "dataset": "sift",
+      "nodes": 100000,
+      "policy": "header_actual",
+      "update_ratio": 0.3,
+      "granularity": 8,
+      "cache_capacity": 10000,
+      "threads": 1,
+      "distribution": "random",
+      "warmup": 1000,
+      "groups": [
+        "main"
+      ],
+      "config_id": "c019",
+      "operation_count": 2000,
+      "epoch_size": 100
+    },
+    {
+      "dataset": "sift",
+      "nodes": 100000,
+      "policy": "cached_length",
+      "update_ratio": 0,
+      "granularity": 8,
+      "cache_capacity": 10000,
+      "threads": 1,
+      "distribution": "random",
+      "warmup": 1000,
+      "groups": [
+        "main"
+      ],
+      "config_id": "c020",
+      "operation_count": 10000,
+      "epoch_size": 100
+    },
+    {
+      "dataset": "sift",
+      "nodes": 100000,
+      "policy": "cached_length",
+      "update_ratio": 0.3,
+      "granularity": 8,
+      "cache_capacity": 10000,
+      "threads": 1,
+      "distribution": "random",
+      "warmup": 1000,
+      "groups": [
+        "main"
+      ],
+      "config_id": "c021",
+      "operation_count": 2000,
+      "epoch_size": 100
+    },
+    {
+      "dataset": "sift",
+      "nodes": 100000,
+      "policy": "prefix",
+      "update_ratio": 0,
+      "granularity": 8,
+      "cache_capacity": 10000,
+      "threads": 1,
+      "distribution": "random",
+      "warmup": 1000,
+      "groups": [
+        "main"
+      ],
+      "config_id": "c022",
+      "operation_count": 10000,
+      "epoch_size": 100
+    },
+    {
+      "dataset": "sift",
+      "nodes": 100000,
+      "policy": "prefix",
+      "update_ratio": 0.3,
+      "granularity": 8,
+      "cache_capacity": 10000,
+      "threads": 1,
+      "distribution": "random",
+      "warmup": 1000,
+      "groups": [
+        "main"
+      ],
+      "config_id": "c023",
+      "operation_count": 2000,
+      "epoch_size": 100
+    },
+    {
+      "dataset": "sift",
+      "nodes": 10000,
+      "policy": "prefix",
+      "update_ratio": 0.1,
+      "granularity": 1,
+      "cache_capacity": 10000,
+      "threads": 1,
+      "distribution": "random",
+      "warmup": 1000,
+      "groups": [
+        "sensitivity",
+        "g_update_cross"
+      ],
+      "config_id": "c024",
+      "operation_count": 2000,
+      "epoch_size": 100
+    },
+    {
+      "dataset": "sift",
+      "nodes": 10000,
+      "policy": "prefix",
+      "update_ratio": 0.1,
+      "granularity": 2,
+      "cache_capacity": 10000,
+      "threads": 1,
+      "distribution": "random",
+      "warmup": 1000,
+      "groups": [
+        "sensitivity",
+        "g_update_cross"
+      ],
+      "config_id": "c025",
+      "operation_count": 2000,
+      "epoch_size": 100
+    },
+    {
+      "dataset": "sift",
+      "nodes": 10000,
+      "policy": "prefix",
+      "update_ratio": 0.1,
+      "granularity": 4,
+      "cache_capacity": 10000,
+      "threads": 1,
+      "distribution": "random",
+      "warmup": 1000,
+      "groups": [
+        "sensitivity",
+        "g_update_cross"
+      ],
+      "config_id": "c026",
+      "operation_count": 2000,
+      "epoch_size": 100
+    },
+    {
+      "dataset": "sift",
+      "nodes": 10000,
+      "policy": "prefix",
+      "update_ratio": 0.1,
+      "granularity": 8,
+      "cache_capacity": 10000,
+      "threads": 1,
+      "distribution": "random",
+      "warmup": 1000,
+      "groups": [
+        "sensitivity",
+        "sensitivity",
+        "sensitivity",
+        "sensitivity",
+        "sensitivity",
+        "g_update_cross"
+      ],
+      "config_id": "c027",
+      "operation_count": 2000,
+      "epoch_size": 100
+    },
+    {
+      "dataset": "sift",
+      "nodes": 10000,
+      "policy": "prefix",
+      "update_ratio": 0.1,
+      "granularity": 16,
+      "cache_capacity": 10000,
+      "threads": 1,
+      "distribution": "random",
+      "warmup": 1000,
+      "groups": [
+        "sensitivity",
+        "g_update_cross"
+      ],
+      "config_id": "c028",
+      "operation_count": 2000,
+      "epoch_size": 100
+    },
+    {
+      "dataset": "sift",
+      "nodes": 10000,
+      "policy": "prefix",
+      "update_ratio": 0.1,
+      "granularity": 8,
+      "cache_capacity": 1000,
+      "threads": 1,
+      "distribution": "random",
+      "warmup": 1000,
+      "groups": [
+        "sensitivity"
+      ],
+      "config_id": "c029",
+      "operation_count": 2000,
+      "epoch_size": 100
+    },
+    {
+      "dataset": "sift",
+      "nodes": 10000,
+      "policy": "prefix",
+      "update_ratio": 0.1,
+      "granularity": 8,
+      "cache_capacity": 100000,
+      "threads": 1,
+      "distribution": "random",
+      "warmup": 1000,
+      "groups": [
+        "sensitivity"
+      ],
+      "config_id": "c030",
+      "operation_count": 2000,
+      "epoch_size": 100
+    },
+    {
+      "dataset": "sift",
+      "nodes": 10000,
+      "policy": "prefix",
+      "update_ratio": 0.5,
+      "granularity": 8,
+      "cache_capacity": 10000,
+      "threads": 1,
+      "distribution": "random",
+      "warmup": 1000,
+      "groups": [
+        "sensitivity",
+        "g_update_cross"
+      ],
+      "config_id": "c031",
+      "operation_count": 2000,
+      "epoch_size": 100
+    },
+    {
+      "dataset": "sift",
+      "nodes": 10000,
+      "policy": "prefix",
+      "update_ratio": 0.1,
+      "granularity": 8,
+      "cache_capacity": 10000,
+      "threads": 4,
+      "distribution": "random",
+      "warmup": 1000,
+      "groups": [
+        "sensitivity"
+      ],
+      "config_id": "c032",
+      "operation_count": 2000,
+      "epoch_size": 100
+    },
+    {
+      "dataset": "sift",
+      "nodes": 10000,
+      "policy": "prefix",
+      "update_ratio": 0.1,
+      "granularity": 8,
+      "cache_capacity": 10000,
+      "threads": 1,
+      "distribution": "hotspot",
+      "warmup": 1000,
+      "groups": [
+        "sensitivity"
+      ],
+      "config_id": "c033",
+      "operation_count": 2000,
+      "epoch_size": 100
+    },
+    {
+      "dataset": "sift",
+      "nodes": 10000,
+      "policy": "prefix",
+      "update_ratio": 0,
+      "granularity": 1,
+      "cache_capacity": 10000,
+      "threads": 1,
+      "distribution": "random",
+      "warmup": 1000,
+      "groups": [
+        "g_update_cross"
+      ],
+      "config_id": "c034",
+      "operation_count": 10000,
+      "epoch_size": 100
+    },
+    {
+      "dataset": "sift",
+      "nodes": 10000,
+      "policy": "prefix",
+      "update_ratio": 0.3,
+      "granularity": 1,
+      "cache_capacity": 10000,
+      "threads": 1,
+      "distribution": "random",
+      "warmup": 1000,
+      "groups": [
+        "g_update_cross"
+      ],
+      "config_id": "c035",
+      "operation_count": 2000,
+      "epoch_size": 100
+    },
+    {
+      "dataset": "sift",
+      "nodes": 10000,
+      "policy": "prefix",
+      "update_ratio": 0.5,
+      "granularity": 1,
+      "cache_capacity": 10000,
+      "threads": 1,
+      "distribution": "random",
+      "warmup": 1000,
+      "groups": [
+        "g_update_cross"
+      ],
+      "config_id": "c036",
+      "operation_count": 2000,
+      "epoch_size": 100
+    },
+    {
+      "dataset": "sift",
+      "nodes": 10000,
+      "policy": "prefix",
+      "update_ratio": 0,
+      "granularity": 2,
+      "cache_capacity": 10000,
+      "threads": 1,
+      "distribution": "random",
+      "warmup": 1000,
+      "groups": [
+        "g_update_cross"
+      ],
+      "config_id": "c037",
+      "operation_count": 10000,
+      "epoch_size": 100
+    },
+    {
+      "dataset": "sift",
+      "nodes": 10000,
+      "policy": "prefix",
+      "update_ratio": 0.3,
+      "granularity": 2,
+      "cache_capacity": 10000,
+      "threads": 1,
+      "distribution": "random",
+      "warmup": 1000,
+      "groups": [
+        "g_update_cross"
+      ],
+      "config_id": "c038",
+      "operation_count": 2000,
+      "epoch_size": 100
+    },
+    {
+      "dataset": "sift",
+      "nodes": 10000,
+      "policy": "prefix",
+      "update_ratio": 0.5,
+      "granularity": 2,
+      "cache_capacity": 10000,
+      "threads": 1,
+      "distribution": "random",
+      "warmup": 1000,
+      "groups": [
+        "g_update_cross"
+      ],
+      "config_id": "c039",
+      "operation_count": 2000,
+      "epoch_size": 100
+    },
+    {
+      "dataset": "sift",
+      "nodes": 10000,
+      "policy": "prefix",
+      "update_ratio": 0,
+      "granularity": 4,
+      "cache_capacity": 10000,
+      "threads": 1,
+      "distribution": "random",
+      "warmup": 1000,
+      "groups": [
+        "g_update_cross"
+      ],
+      "config_id": "c040",
+      "operation_count": 10000,
+      "epoch_size": 100
+    },
+    {
+      "dataset": "sift",
+      "nodes": 10000,
+      "policy": "prefix",
+      "update_ratio": 0.3,
+      "granularity": 4,
+      "cache_capacity": 10000,
+      "threads": 1,
+      "distribution": "random",
+      "warmup": 1000,
+      "groups": [
+        "g_update_cross"
+      ],
+      "config_id": "c041",
+      "operation_count": 2000,
+      "epoch_size": 100
+    },
+    {
+      "dataset": "sift",
+      "nodes": 10000,
+      "policy": "prefix",
+      "update_ratio": 0.5,
+      "granularity": 4,
+      "cache_capacity": 10000,
+      "threads": 1,
+      "distribution": "random",
+      "warmup": 1000,
+      "groups": [
+        "g_update_cross"
+      ],
+      "config_id": "c042",
+      "operation_count": 2000,
+      "epoch_size": 100
+    },
+    {
+      "dataset": "sift",
+      "nodes": 10000,
+      "policy": "prefix",
+      "update_ratio": 0,
+      "granularity": 16,
+      "cache_capacity": 10000,
+      "threads": 1,
+      "distribution": "random",
+      "warmup": 1000,
+      "groups": [
+        "g_update_cross"
+      ],
+      "config_id": "c043",
+      "operation_count": 10000,
+      "epoch_size": 100
+    },
+    {
+      "dataset": "sift",
+      "nodes": 10000,
+      "policy": "prefix",
+      "update_ratio": 0.3,
+      "granularity": 16,
+      "cache_capacity": 10000,
+      "threads": 1,
+      "distribution": "random",
+      "warmup": 1000,
+      "groups": [
+        "g_update_cross"
+      ],
+      "config_id": "c044",
+      "operation_count": 2000,
+      "epoch_size": 100
+    },
+    {
+      "dataset": "sift",
+      "nodes": 10000,
+      "policy": "prefix",
+      "update_ratio": 0.5,
+      "granularity": 16,
+      "cache_capacity": 10000,
+      "threads": 1,
+      "distribution": "random",
+      "warmup": 1000,
+      "groups": [
+        "g_update_cross"
+      ],
+      "config_id": "c045",
+      "operation_count": 2000,
+      "epoch_size": 100
+    },
+    {
+      "dataset": "sift",
+      "nodes": 10000,
+      "policy": "prefix",
+      "update_ratio": 0.1,
+      "granularity": 8,
+      "cache_capacity": 1000,
+      "threads": 1,
+      "distribution": "hotspot",
+      "warmup": 1000,
+      "groups": [
+        "hot_cache"
+      ],
+      "config_id": "c046",
+      "operation_count": 2000,
+      "epoch_size": 100
+    },
+    {
+      "dataset": "sift",
+      "nodes": 10000,
+      "policy": "prefix",
+      "update_ratio": 0.1,
+      "granularity": 8,
+      "cache_capacity": 100000,
+      "threads": 1,
+      "distribution": "hotspot",
+      "warmup": 1000,
+      "groups": [
+        "hot_cache"
+      ],
+      "config_id": "c047",
+      "operation_count": 2000,
+      "epoch_size": 100
+    },
+    {
+      "dataset": "mnist",
+      "nodes": 10000,
+      "policy": "fixed",
+      "update_ratio": 0,
+      "granularity": 8,
+      "cache_capacity": 10000,
+      "threads": 1,
+      "distribution": "random",
+      "warmup": 1000,
+      "groups": [
+        "extension"
+      ],
+      "config_id": "c048",
+      "operation_count": 10000,
+      "epoch_size": 100
+    },
+    {
+      "dataset": "mnist",
+      "nodes": 10000,
+      "policy": "header_actual",
+      "update_ratio": 0,
+      "granularity": 8,
+      "cache_capacity": 10000,
+      "threads": 1,
+      "distribution": "random",
+      "warmup": 1000,
+      "groups": [
+        "extension"
+      ],
+      "config_id": "c049",
+      "operation_count": 10000,
+      "epoch_size": 100
+    },
+    {
+      "dataset": "mnist",
+      "nodes": 10000,
+      "policy": "cached_length",
+      "update_ratio": 0,
+      "granularity": 8,
+      "cache_capacity": 10000,
+      "threads": 1,
+      "distribution": "random",
+      "warmup": 1000,
+      "groups": [
+        "extension"
+      ],
+      "config_id": "c050",
+      "operation_count": 10000,
+      "epoch_size": 100
+    },
+    {
+      "dataset": "mnist",
+      "nodes": 10000,
+      "policy": "prefix",
+      "update_ratio": 0,
+      "granularity": 8,
+      "cache_capacity": 10000,
+      "threads": 1,
+      "distribution": "random",
+      "warmup": 1000,
+      "groups": [
+        "extension"
+      ],
+      "config_id": "c051",
+      "operation_count": 10000,
+      "epoch_size": 100
+    },
+    {
+      "dataset": "sift",
+      "nodes": 10000,
+      "policy": "fixed",
+      "update_ratio": 0,
+      "granularity": 8,
+      "cache_capacity": 10000,
+      "threads": 1,
+      "distribution": "random",
+      "warmup": 0,
+      "groups": [
+        "cold_static_control"
+      ],
+      "config_id": "c052",
+      "operation_count": 10000,
+      "epoch_size": 100
+    },
+    {
+      "dataset": "sift",
+      "nodes": 10000,
+      "policy": "header_actual",
+      "update_ratio": 0,
+      "granularity": 8,
+      "cache_capacity": 10000,
+      "threads": 1,
+      "distribution": "random",
+      "warmup": 0,
+      "groups": [
+        "cold_static_control"
+      ],
+      "config_id": "c053",
+      "operation_count": 10000,
+      "epoch_size": 100
+    },
+    {
+      "dataset": "sift",
+      "nodes": 10000,
+      "policy": "cached_length",
+      "update_ratio": 0,
+      "granularity": 8,
+      "cache_capacity": 10000,
+      "threads": 1,
+      "distribution": "random",
+      "warmup": 0,
+      "groups": [
+        "cold_static_control"
+      ],
+      "config_id": "c054",
+      "operation_count": 10000,
+      "epoch_size": 100
+    },
+    {
+      "dataset": "sift",
+      "nodes": 10000,
+      "policy": "prefix",
+      "update_ratio": 0,
+      "granularity": 8,
+      "cache_capacity": 10000,
+      "threads": 1,
+      "distribution": "random",
+      "warmup": 0,
+      "groups": [
+        "cold_static_control"
+      ],
+      "config_id": "c055",
+      "operation_count": 10000,
+      "epoch_size": 100
+    },
+    {
+      "dataset": "sift",
+      "nodes": 50000,
+      "policy": "fixed",
+      "update_ratio": 0,
+      "granularity": 8,
+      "cache_capacity": 10000,
+      "threads": 1,
+      "distribution": "random",
+      "warmup": 0,
+      "groups": [
+        "cold_static_control"
+      ],
+      "config_id": "c056",
+      "operation_count": 10000,
+      "epoch_size": 100
+    },
+    {
+      "dataset": "sift",
+      "nodes": 50000,
+      "policy": "header_actual",
+      "update_ratio": 0,
+      "granularity": 8,
+      "cache_capacity": 10000,
+      "threads": 1,
+      "distribution": "random",
+      "warmup": 0,
+      "groups": [
+        "cold_static_control"
+      ],
+      "config_id": "c057",
+      "operation_count": 10000,
+      "epoch_size": 100
+    },
+    {
+      "dataset": "sift",
+      "nodes": 50000,
+      "policy": "cached_length",
+      "update_ratio": 0,
+      "granularity": 8,
+      "cache_capacity": 10000,
+      "threads": 1,
+      "distribution": "random",
+      "warmup": 0,
+      "groups": [
+        "cold_static_control"
+      ],
+      "config_id": "c058",
+      "operation_count": 10000,
+      "epoch_size": 100
+    },
+    {
+      "dataset": "sift",
+      "nodes": 50000,
+      "policy": "prefix",
+      "update_ratio": 0,
+      "granularity": 8,
+      "cache_capacity": 10000,
+      "threads": 1,
+      "distribution": "random",
+      "warmup": 0,
+      "groups": [
+        "cold_static_control"
+      ],
+      "config_id": "c059",
+      "operation_count": 10000,
+      "epoch_size": 100
+    },
+    {
+      "dataset": "sift",
+      "nodes": 100000,
+      "policy": "fixed",
+      "update_ratio": 0,
+      "granularity": 8,
+      "cache_capacity": 10000,
+      "threads": 1,
+      "distribution": "random",
+      "warmup": 0,
+      "groups": [
+        "cold_static_control"
+      ],
+      "config_id": "c060",
+      "operation_count": 10000,
+      "epoch_size": 100
+    },
+    {
+      "dataset": "sift",
+      "nodes": 100000,
+      "policy": "header_actual",
+      "update_ratio": 0,
+      "granularity": 8,
+      "cache_capacity": 10000,
+      "threads": 1,
+      "distribution": "random",
+      "warmup": 0,
+      "groups": [
+        "cold_static_control"
+      ],
+      "config_id": "c061",
+      "operation_count": 10000,
+      "epoch_size": 100
+    },
+    {
+      "dataset": "sift",
+      "nodes": 100000,
+      "policy": "cached_length",
+      "update_ratio": 0,
+      "granularity": 8,
+      "cache_capacity": 10000,
+      "threads": 1,
+      "distribution": "random",
+      "warmup": 0,
+      "groups": [
+        "cold_static_control"
+      ],
+      "config_id": "c062",
+      "operation_count": 10000,
+      "epoch_size": 100
+    },
+    {
+      "dataset": "sift",
+      "nodes": 100000,
+      "policy": "prefix",
+      "update_ratio": 0,
+      "granularity": 8,
+      "cache_capacity": 10000,
+      "threads": 1,
+      "distribution": "random",
+      "warmup": 0,
+      "groups": [
+        "cold_static_control"
+      ],
+      "config_id": "c063",
+      "operation_count": 10000,
+      "epoch_size": 100
+    }
+  ],
+  "original_unique_matrix": 52,
+  "additional_cold_controls": 12,
+  "truth": "1000-query pool; static truth exact float64 and dynamic per-reader epoch probes outside timing",
+  "model": {
+    "latency_us": 3,
+    "bandwidth_gbps": 100,
+    "calibration": "assumed, not measured RDMA"
+  }
+}

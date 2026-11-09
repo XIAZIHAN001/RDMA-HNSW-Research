@@ -1,0 +1,29 @@
+{
+  "stage": "T5",
+  "measurement": "local_mmap_trace_and_correctness_pilot",
+  "nodes": 10000,
+  "granularity": [
+    1,
+    2,
+    4,
+    8,
+    16
+  ],
+  "cache_capacity": 10000,
+  "static_query_count": 100,
+  "dynamic_operations": 40,
+  "dynamic_update_ratio": 0.3,
+  "cache_modes": [
+    "warm",
+    "cold"
+  ],
+  "distributions": [
+    "random",
+    "hotspot"
+  ],
+  "model": {
+    "latency_us": 3,
+    "bandwidth_gbps": 100,
+    "calibration": "assumed, not measured RDMA"
+  }
+}

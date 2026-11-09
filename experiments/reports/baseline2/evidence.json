@@ -1,0 +1,334 @@
+{
+  "measurement": "local_mmap_pilot",
+  "run_metadata": {
+    "measurement": "local_mmap_pilot",
+    "scales": [
+      10000,
+      100000
+    ],
+    "query_count": 100,
+    "repeats": 3,
+    "ef_search": 256,
+    "k": 10,
+    "M": 16,
+    "ef_construction": 100,
+    "seed": 42,
+    "index_filesystem": "Linux temporary copy",
+    "policy_order": "shuffled each repeat with seed 42+node_count",
+    "lab_client_sha256": "b4b7a3e25831820c9d1bc964371220c1779de8fa8951571cfeb7e2e6dae7ef2a"
+  },
+  "models": {
+    "latency_us": 3.0,
+    "bandwidth_gbps": 100.0,
+    "calibration": "assumed, not measured RDMA"
+  },
+  "scales": {
+    "10000": {
+      "fixed": {
+        "query_count": 100,
+        "repeat_count": 3,
+        "mean_query_ms": 1.3175004666666668,
+        "stdev_run_mean_ms": 0.029684409010041563,
+        "run_mean_ms": [
+          1.29690744,
+          1.35152691,
+          1.3040670499999998
+        ],
+        "recalls": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "metrics": {
+          "neighbor_reads": 27783,
+          "neighbor_requested_bytes": 3527644,
+          "neighbor_useful_bytes": 1905520,
+          "neighbor_wasted_bytes": 1622124,
+          "neighbor_dependent_reads": 0,
+          "neighbor_header_reads": 0,
+          "neighbor_accesses": 27783,
+          "capacity_clamps": 0
+        },
+        "total_requested_bytes": 208515484,
+        "total_read_ops": 410223,
+        "trace_accesses_compared": 27783,
+        "input_hashes": {
+          "results": {
+            "path": "D:\\科研轮转第二周期\\RDMA-HNSW-Lab\\results\\baseline2\\sift10000_fixed_r0.csv",
+            "sha256": "4a9ec871a58e4e5997dbf7c8fce17b5a88ea4408af306f15d4d5723e76963dfe"
+          },
+          "truth": {
+            "path": "D:\\科研轮转第二周期\\RDMA-HNSW-Lab\\data\\sift10000\\ground_truth.npy",
+            "sha256": "041f161803254e38bd72186646b89b1a519ae256d531e8c6f10f1b3564d7f19b"
+          },
+          "index": {
+            "path": "D:\\科研轮转第二周期\\RDMA-HNSW-Lab\\data\\sift10000\\index.bin",
+            "sha256": "75556459d32694d81acf2d2ab4d0dc290c0782c588e6f17d96ec1450d147922f"
+          }
+        },
+        "model": {
+          "measurement": "trace_replay_model",
+          "scope": "adjacency_reads_only",
+          "policy": "fixed",
+          "access_count": 27783,
+          "query_count": 100,
+          "latency_us": 3.0,
+          "bandwidth_gbps": 100.0,
+          "bandwidth_unit": "decimal Gbit/s",
+          "calibration": "user_configured_assumption",
+          "assumptions": "Serial READ costs L + bytes/B; excludes vectors, search, CPU and overlap",
+          "totals": {
+            "requested_bytes": 3527644,
+            "useful_bytes": 1905520,
+            "wasted_bytes": 1622124,
+            "read_ops": 27783,
+            "dependent_reads": 0,
+            "header_reads": 0,
+            "estimated_latency_us": 83631.21151999121
+          },
+          "trace": {
+            "path": "D:\\科研轮转第二周期\\RDMA-HNSW-Lab\\results\\baseline2\\sift10000_fixed_trace.csv",
+            "sha256": "d82904fd1a758e9d44a1d77d67eb5746f14138cccb75133a1edc7646bdfdf96e"
+          },
+          "snapshots": [
+            1
+          ],
+          "cache_policies": "cached_length and prefix reserved for T4/T5; not simulated yet"
+        }
+      },
+      "header_actual": {
+        "query_count": 100,
+        "repeat_count": 3,
+        "mean_query_ms": 1.4907474800000002,
+        "stdev_run_mean_ms": 0.001368702414551988,
+        "run_mean_ms": [
+          1.4923039400000002,
+          1.4902067799999998,
+          1.48973172
+        ],
+        "recalls": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "metrics": {
+          "neighbor_reads": 55466,
+          "neighbor_requested_bytes": 1905520,
+          "neighbor_useful_bytes": 1905520,
+          "neighbor_wasted_bytes": 0,
+          "neighbor_dependent_reads": 27683,
+          "neighbor_header_reads": 27783,
+          "neighbor_accesses": 27783,
+          "capacity_clamps": 0
+        },
+        "total_requested_bytes": 206893360,
+        "total_read_ops": 437906,
+        "trace_accesses_compared": 27783,
+        "input_hashes": {
+          "results": {
+            "path": "D:\\科研轮转第二周期\\RDMA-HNSW-Lab\\results\\baseline2\\sift10000_header_actual_r0.csv",
+            "sha256": "bfd6eee137bd05e5acb769fc97624a07b6fea1c683a6f88ed9efaf6e9356be8d"
+          },
+          "truth": {
+            "path": "D:\\科研轮转第二周期\\RDMA-HNSW-Lab\\data\\sift10000\\ground_truth.npy",
+            "sha256": "041f161803254e38bd72186646b89b1a519ae256d531e8c6f10f1b3564d7f19b"
+          },
+          "index": {
+            "path": "D:\\科研轮转第二周期\\RDMA-HNSW-Lab\\data\\sift10000\\index.bin",
+            "sha256": "75556459d32694d81acf2d2ab4d0dc290c0782c588e6f17d96ec1450d147922f"
+          }
+        },
+        "model": {
+          "measurement": "trace_replay_model",
+          "scope": "adjacency_reads_only",
+          "policy": "header_actual",
+          "access_count": 27783,
+          "query_count": 100,
+          "latency_us": 3.0,
+          "bandwidth_gbps": 100.0,
+          "bandwidth_unit": "decimal Gbit/s",
+          "calibration": "user_configured_assumption",
+          "assumptions": "Serial READ costs L + bytes/B; excludes vectors, search, CPU and overlap",
+          "totals": {
+            "requested_bytes": 1905520,
+            "useful_bytes": 1905520,
+            "wasted_bytes": 0,
+            "read_ops": 55466,
+            "dependent_reads": 27683,
+            "header_reads": 27783,
+            "estimated_latency_us": 166550.44159999452
+          },
+          "trace": {
+            "path": "D:\\科研轮转第二周期\\RDMA-HNSW-Lab\\results\\baseline2\\sift10000_fixed_trace.csv",
+            "sha256": "d82904fd1a758e9d44a1d77d67eb5746f14138cccb75133a1edc7646bdfdf96e"
+          },
+          "snapshots": [
+            1
+          ],
+          "cache_policies": "cached_length and prefix reserved for T4/T5; not simulated yet"
+        }
+      },
+      "comparison": {
+        "adjacency_byte_savings_fraction": 0.4598321145784552,
+        "all_requested_byte_savings_fraction": 0.007779393495784707,
+        "extra_neighbor_read_ops": 27683,
+        "local_mean_latency_change_fraction": 0.13149673773676596,
+        "serial_model_break_even_latency_us": 0.00468771159195174
+      }
+    },
+    "100000": {
+      "fixed": {
+        "query_count": 100,
+        "repeat_count": 3,
+        "mean_query_ms": 1.9466747733333332,
+        "stdev_run_mean_ms": 0.03353506433430721,
+        "run_mean_ms": [
+          1.9665499199999998,
+          1.965518,
+          1.9079564000000002
+        ],
+        "recalls": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "metrics": {
+          "neighbor_reads": 28024,
+          "neighbor_requested_bytes": 3544032,
+          "neighbor_useful_bytes": 2208564,
+          "neighbor_wasted_bytes": 1335468,
+          "neighbor_dependent_reads": 0,
+          "neighbor_header_reads": 0,
+          "neighbor_accesses": 28024,
+          "capacity_clamps": 0
+        },
+        "total_requested_bytes": 259306616,
+        "total_read_ops": 505193,
+        "trace_accesses_compared": 28024,
+        "input_hashes": {
+          "results": {
+            "path": "D:\\科研轮转第二周期\\RDMA-HNSW-Lab\\results\\baseline2\\sift100000_fixed_r0.csv",
+            "sha256": "9c2333956c1b31d061832ef4fcedc0409245c6583dd1f89984983d0445513f9b"
+          },
+          "truth": {
+            "path": "D:\\科研轮转第二周期\\RDMA-HNSW-Lab\\data\\sift100000\\ground_truth.npy",
+            "sha256": "68c03da37250dd8417ae046f6c8299efd9ff8f32dc108c89e7308ace91d2572e"
+          },
+          "index": {
+            "path": "D:\\科研轮转第二周期\\RDMA-HNSW-Lab\\data\\sift100000\\index.bin",
+            "sha256": "dd1086d0cd75447286519dbdec16a460d750c6150d5063df529b56f6b45550bf"
+          }
+        },
+        "model": {
+          "measurement": "trace_replay_model",
+          "scope": "adjacency_reads_only",
+          "policy": "fixed",
+          "access_count": 28024,
+          "query_count": 100,
+          "latency_us": 3.0,
+          "bandwidth_gbps": 100.0,
+          "bandwidth_unit": "decimal Gbit/s",
+          "calibration": "user_configured_assumption",
+          "assumptions": "Serial READ costs L + bytes/B; excludes vectors, search, CPU and overlap",
+          "totals": {
+            "requested_bytes": 3544032,
+            "useful_bytes": 2208564,
+            "wasted_bytes": 1335468,
+            "read_ops": 28024,
+            "dependent_reads": 0,
+            "header_reads": 0,
+            "estimated_latency_us": 84355.52255998977
+          },
+          "trace": {
+            "path": "D:\\科研轮转第二周期\\RDMA-HNSW-Lab\\results\\baseline2\\sift100000_fixed_trace.csv",
+            "sha256": "2576361f59340e2ec51437bbddbc1f2acb0955aab72ae4e51e8e8f92cb359821"
+          },
+          "snapshots": [
+            1
+          ],
+          "cache_policies": "cached_length and prefix reserved for T4/T5; not simulated yet"
+        }
+      },
+      "header_actual": {
+        "query_count": 100,
+        "repeat_count": 3,
+        "mean_query_ms": 2.1286000633333333,
+        "stdev_run_mean_ms": 0.01648800829600207,
+        "run_mean_ms": [
+          2.1444083999999997,
+          2.1298843,
+          2.1115074899999997
+        ],
+        "recalls": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "metrics": {
+          "neighbor_reads": 56048,
+          "neighbor_requested_bytes": 2208564,
+          "neighbor_useful_bytes": 2208564,
+          "neighbor_wasted_bytes": 0,
+          "neighbor_dependent_reads": 28024,
+          "neighbor_header_reads": 28024,
+          "neighbor_accesses": 28024,
+          "capacity_clamps": 0
+        },
+        "total_requested_bytes": 257971148,
+        "total_read_ops": 533217,
+        "trace_accesses_compared": 28024,
+        "input_hashes": {
+          "results": {
+            "path": "D:\\科研轮转第二周期\\RDMA-HNSW-Lab\\results\\baseline2\\sift100000_header_actual_r0.csv",
+            "sha256": "b0a4db09566133368e49fb979ed5980d7e37cd44880b33d8d8cfa628788465fc"
+          },
+          "truth": {
+            "path": "D:\\科研轮转第二周期\\RDMA-HNSW-Lab\\data\\sift100000\\ground_truth.npy",
+            "sha256": "68c03da37250dd8417ae046f6c8299efd9ff8f32dc108c89e7308ace91d2572e"
+          },
+          "index": {
+            "path": "D:\\科研轮转第二周期\\RDMA-HNSW-Lab\\data\\sift100000\\index.bin",
+            "sha256": "dd1086d0cd75447286519dbdec16a460d750c6150d5063df529b56f6b45550bf"
+          }
+        },
+        "model": {
+          "measurement": "trace_replay_model",
+          "scope": "adjacency_reads_only",
+          "policy": "header_actual",
+          "access_count": 28024,
+          "query_count": 100,
+          "latency_us": 3.0,
+          "bandwidth_gbps": 100.0,
+          "bandwidth_unit": "decimal Gbit/s",
+          "calibration": "user_configured_assumption",
+          "assumptions": "Serial READ costs L + bytes/B; excludes vectors, search, CPU and overlap",
+          "totals": {
+            "requested_bytes": 2208564,
+            "useful_bytes": 2208564,
+            "wasted_bytes": 0,
+            "read_ops": 56048,
+            "dependent_reads": 28024,
+            "header_reads": 28024,
+            "estimated_latency_us": 168320.6851199943
+          },
+          "trace": {
+            "path": "D:\\科研轮转第二周期\\RDMA-HNSW-Lab\\results\\baseline2\\sift100000_fixed_trace.csv",
+            "sha256": "2576361f59340e2ec51437bbddbc1f2acb0955aab72ae4e51e8e8f92cb359821"
+          },
+          "snapshots": [
+            1
+          ],
+          "cache_policies": "cached_length and prefix reserved for T4/T5; not simulated yet"
+        }
+      },
+      "comparison": {
+        "adjacency_byte_savings_fraction": 0.37682165398055095,
+        "all_requested_byte_savings_fraction": 0.005150150121892763,
+        "extra_neighbor_read_ops": 28024,
+        "local_mean_latency_change_fraction": 0.09345438308037735,
+        "serial_model_break_even_latency_us": 0.003812355124179275
+      }
+    }
+  },
+  "_publication_scope": "Small historical pilot summary retained as a plot input protection regression fixture. Not a formal or fair performance ranking; the original trial had nonuniform compiler optimization."
+}

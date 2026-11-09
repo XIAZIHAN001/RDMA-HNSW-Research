@@ -1,0 +1,17 @@
+{
+  "description": "Kickoff pilot; reference configuration for README CLI commands",
+  "measurement": "local_mmap",
+  "dataset": "SIFT1M first N base vectors; first 100 official query vectors",
+  "node_counts": [10000, 100000],
+  "query_count": 100,
+  "M": 16,
+  "ef_construction": 100,
+  "ef_search_values": [64, 128, 256],
+  "seed": 42,
+  "k": 10,
+  "policy": "fixed",
+  "trace_ef_search": 256,
+  "update_pilot": {"operation": "upsert", "count_per_scale": 5, "seed": 42},
+  "index_runtime_filesystem": "WSL Linux filesystem",
+  "hardware_rdma": "unavailable"
+}

@@ -1,0 +1,29 @@
+{
+  "utc": "2026-10-09T05:03:27.156952+00:00",
+  "measurement": "device_independent_tool_validation",
+  "tests": {
+    "mmap": {
+      "passed": 23,
+      "skipped": 0
+    },
+    "rdma": {
+      "passed": 23,
+      "skipped": 1
+    }
+  },
+  "bundle_sha256": "e6b2573aa2b708626787f3aa07a382e8d18910c60f6f8800c6ca2abd213ce58c",
+  "prepared_cases": 16,
+  "mmap_totals": {
+    "queries": 736,
+    "updates": 144
+  },
+  "mmap_policy_results_identical": true,
+  "mmap_master_preserved": true,
+  "fixture_validation_cases": 16,
+  "live_remote_dram_connection_verified": false,
+  "hardware_performance_acceptance": false,
+  "unavailable_connection_created_success_log": false,
+  "source_commit": "d5c78a5e6ac28902a0cfac5c1c5300159454dc38",
+  "minimum_mmap_recall": 1.0,
+  "scope": "Historical device-independent correctness record. Not a live RDMA acceptance record; full data and logs retained locally."
+}
