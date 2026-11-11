@@ -16,3 +16,7 @@ GCC 11.4.0、CMake 3.22.1、NumPy 1.21.5；策略与客户端统一 Release。�
 本次机器可读记录见[公开版本验证](../../artifacts/validation/publication-2026-11-09.json)。另见[历史正确性摘要](../../artifacts/validation/offline-tools-2026-10-09.json)；它不等同于本目录重新运行 SIFT 矩阵。
 
 硬件测试跳过不能算硬件通过。发布还检查源码清单、文档内部链接和凭据格式；不代表真实两端验收或独立全量安全审计。
+
+## 2026-11-11 双节点验证
+
+完成静态 IB、SIFT 1K CM 功能验证、96 轮四档 RDMA CM 主实验及 42 轮新增 SIFT 10K 对照。[实验图表、逐轮指标与复现设置](../../artifacts/validation/rdma-cm-2026-11-11/README.md)

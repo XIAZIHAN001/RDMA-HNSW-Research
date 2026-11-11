@@ -2,7 +2,7 @@
 
 **面向动态图索引的分级读取优化机制**：基于教师的 RDMA-HNSW-Lab，比较固定读取、精确两阶段、历史长度缓存和分级前缀读取，研究邻接数据量、依赖 READ 与动态修复的取舍。
 
-**当前：四策略、动态/epoch 客户端和实际 RDMA 接入代码已实现，无设备正确性检查点已完成。尚无真实远程 DRAM 连接及硬件性能验收。正式性能矩阵和结题材料暂停。**
+已完成四种读取策略的双节点 RDMA CM 主实验，覆盖 SIFT 1K、10K、50K、100K，以及 SIFT 10K 参数敏感性对照。
 
 | 阅读入口 | 内容 |
 | --- | --- |
@@ -14,6 +14,7 @@
 | [读取路径](experiments/docs/read-path.md) | 文件布局、逻辑读取与计数范围 |
 | [离线验收](experiments/docs/rdma-offline-tools.md) | 预检、验收包、按角色运行和核验 |
 | [RDMA 部署](experiments/docs/rdma-migration.md) | 两端 CM、更新与快照验收 |
+| [双节点 RDMA 实验结果](artifacts/validation/rdma-cm-2026-11-11/README.md) | 四档主实验、参数敏感性、图表和逐轮数据 |
 | [发布验证](docs/validation/README.md) | 本次公开源码重新构建记录 |
 
 ## 工程结构
@@ -89,7 +90,7 @@ python3 -B experiments/python/rdma_preflight.py \
 
 2026-10-09 本地小型 SIFT 检查点有 16 配置、736 查询、144 更新，最低 Recall@10=1，见[历史摘要](artifacts/validation/offline-tools-2026-10-09.json)。这不是硬件性能。旧试测曾有非统一优化选项，耗时排名不作为正式结论。
 
-Git 保留源码、测试、CMake、配置和研究说明；完整数据集、原始日志、构建缓存、个人身份字段和代理执行记录留在本地。论文保留原创解读与出处。必要的 Linux x86_64 可执行产物放在 [Releases](https://github.com/XIAZIHAN001/RDMA-HNSW-Research/releases)。
+Git 保留源码、测试、CMake、配置、研究说明及实验逐轮指标。完整数据集、原始日志、构建缓存、个人身份字段和代理执行记录留在本地。论文保留原创解读与出处。必要的 Linux x86_64 可执行产物放在 [Releases](https://github.com/XIAZIHAN001/RDMA-HNSW-Research/releases)。
 
 ## 来源与许可证
 
